@@ -1,0 +1,21 @@
+{
+  "name": "vps-clash-link",
+  "version": "0.1.0",
+  "private": true,
+  "description": "从自己的 VPS 到 Clash Verge：本地 SSH 部署、配置生成和连接验证工具",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node src/server.js --demo",
+    "test": "node --test --test-concurrency=1",
+    "check": "node scripts/check-source.js"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.6",
+    "qrcode": "^1.5.4",
+    "ssh2": "^1.17.0",
+    "yaml": "^2.8.1"
+  },
+  "license": "MIT"
+}
